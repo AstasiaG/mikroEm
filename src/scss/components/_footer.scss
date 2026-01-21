@@ -14,7 +14,9 @@
     justify-content: space-between;
 
     &-desc {
+      font-size: 1.6rem;
       color: #8D9091;
+      font-weight: 400;
     }
 
     &-left {
@@ -47,6 +49,7 @@
     display: flex;
     align-items: center;
     margin-top: 1.8rem;
+    margin-bottom: 2rem;
     color: $white;
 
     &-icon {

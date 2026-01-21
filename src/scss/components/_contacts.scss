@@ -50,6 +50,14 @@
 
     & .text-xs {
       color: #8D9091;
+
+    }
+
+    & a.text-xs {
+
+      &:hover {
+        color: $accent;
+      }
     }
   }
 }

@@ -190,7 +190,7 @@ function init() {
   });
   let placemark = new ymaps.Placemark([55.977163, 37.249128], {}, {
           iconLayout: 'default#image',
-          iconImageHref: './../../assets/images/icons/location.svg',
+          iconImageHref: './assets/images/icons/location.svg',
           iconImageSize: [84, 84],
           iconImageOffset: [-45, -65],
       })
