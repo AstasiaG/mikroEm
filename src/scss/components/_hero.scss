@@ -1,0 +1,98 @@
+.hero{
+  position: relative;
+  background-color: $grey;
+
+  &__image {
+    position: absolute;
+    z-index: 0;
+    width: 48%;
+    height: 100%;
+    right: 0;
+    top: 0;
+  }
+
+  .content {
+    position: relative;
+    z-index: 1;
+    max-width: 100%;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 6rem 0 5.6rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    &__left {
+      max-width: 79rem;
+      width: 55%;
+
+      & .title {
+        margin: 11.5rem 0 2.8rem;
+      }
+
+      & .form {
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+
+        padding: 3.6rem;
+        background-color: $white;
+
+        &__inputs {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 1.4rem;
+        }
+
+        & .text-m {
+          font-size: 2.4rem;
+          line-height: 3.2rem;
+        }
+
+        &__input-group {
+          position: relative;
+        }
+      }
+    }
+
+    &__right {
+      position: relative;
+      left: 4dvw;
+      max-width: 82.4rem;
+      width: 55%;
+      display: flex;
+      justify-content: space-between;
+      padding: 2.5rem 4.1rem;
+      background-color: $white;
+    }
+
+    &__item {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.7rem;
+
+      & .text-s {
+        text-align: center;
+      }
+
+      &_img {
+        width: 7.1rem;
+        height: 7.1rem;
+      }
+
+      &:not(:last-child):after {
+        content: '';
+        position: absolute;
+        top: 2.1rem;
+        left: calc(100% + 5.5rem);
+        display: block;
+        width: 0.1rem;
+        height: 8.8rem;
+        background-color: $grey;
+      }
+    }
+  }
+}

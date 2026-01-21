@@ -1,0 +1,22 @@
+.experts {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    width: 65.1rem;
+
+    & .title {
+      margin-bottom: 2.4rem;
+    }
+
+    & .text {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__img {
+    width: 88.2rem;
+  }
+}

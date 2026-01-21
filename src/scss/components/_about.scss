@@ -1,0 +1,90 @@
+.about {
+  &__inner {
+    display: flex;
+    padding: 5rem;
+    gap: 4rem;
+    background-color: $grey;
+  }
+
+  &__left {
+    width: 74rem;
+  }
+
+  &__benefits {
+    margin-top: 4rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3.6rem;
+
+    &:not(:last-child) {
+      padding-bottom: 3.6rem;
+      border-bottom: 0.1rem solid rgba(41, 41, 41, 0.3);
+    }
+
+    &_text {
+      width: 44.2rem;
+
+      & .text {
+        margin-top: 0.8rem;
+        color: rgba(41, 41, 41, 0.5);
+      }
+    }
+  }
+
+  &__right {
+    position: relative;
+    width: 74rem;
+
+    &_img {
+      position: relative;
+      z-index: 0;
+      width: 70.8rem;
+      margin-top: 4rem;
+    }
+  }
+
+  &__cycle {
+    position: relative;
+    z-index: 1;
+    margin: -14.3rem 0 0 auto;
+    width: 56.4rem;
+    padding: 4rem;
+    background-color: $white;
+    border: 0.15rem solid $accent;
+    text-align: center;
+
+    &_items {
+      margin-top: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 9.2rem;
+    }
+
+    &_item {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 10rem;
+      height: 10rem;
+
+      border-radius: 50%;
+      background-color: $grey;
+
+      &:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 5rem;
+        left: 120%;
+        width: 5.2rem;
+        height: 0.1rem;
+        background-color: $accent;
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+.stages {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5.7rem;
+
+    & .text {
+      max-width: 75.6rem;
+      width: 50%;
+      line-height: 3.2rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__items {
+    max-width: 62.4rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 6.8rem;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2.1rem;
+
+    &:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      display: block;
+      bottom: -6rem;
+      left: 4.9rem;
+      width: 0.1rem;
+      height: 5.2rem;
+      background-color: $black;
+    }
+
+    &_img {
+      width: 10rem;
+      height: 10rem;
+      padding: 2.5rem;
+      background-color: $grey;
+      border-radius: 50%;
+    }
+
+    &_text {
+      max-width: 50.3rem;
+      width: 60%;
+    }
+  }
+
+  &__right {
+    max-width: 92.8rem;
+    width: 50%;
+
+    &_article {
+      position: relative;
+      z-index: 2;
+      max-width: 64.4rem;
+      width: 50dvw;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 10.2rem;
+      padding: 2.4rem 7.9rem;
+      background-color: $grey;
+    }
+
+    &_item {
+      position: relative;
+
+      &:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0.6rem;
+        right: -5dvw;
+        width: 0.1rem;
+        height: 8.5rem;
+        background-color: $accent;
+      }
+    }
+
+    &_img {
+      position: relative;
+      z-index: 0;
+      margin-top: -7.2rem;
+    }
+  }
+}

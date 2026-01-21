@@ -1,0 +1,56 @@
+.products {
+  &__title {
+    margin-bottom: 4rem;
+  }
+
+  &__slider {
+    max-width: 146.4rem;
+
+    &-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    &-card {
+      max-width: 71.2rem;
+      padding: 2rem 2rem 3.2rem;
+      background-color: $grey;
+    }
+
+    &_img {
+      width: 100%;
+
+      &-wrap {
+        position: relative;
+        margin-bottom: 3.2rem;
+      }
+    }
+
+    &-btn-next, &-btn-prev {
+      position: relative;
+    }
+
+    &-pagination {
+      position: relative !important;
+      margin-top: 3.6rem;
+    }
+
+    &_zoom {
+      position: absolute;
+      z-index: 3;
+      right: 2rem;
+      bottom: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 4rem;
+      height: 4rem;
+      padding: 0.8rem;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+  }
+}

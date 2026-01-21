@@ -1,0 +1,49 @@
+.advantages {
+  & .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    max-width: 107.4rem;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  &__header, &__item {
+    max-width: 52.7rem;
+    width: 32dvw;
+
+    & .text-m {
+      margin-top: 2.4rem;
+      line-height: 3.2rem;
+    }
+  }
+
+  &__header {
+    width: 70%;
+  }
+  
+  &__item {
+    padding: 2.4rem;
+    background-color: $grey;
+
+    &_img {
+      width: 9rem;
+      height: 9rem;
+      margin-bottom: 4rem;
+    }
+
+    & .text-xs {
+      margin-top: 1.2rem;
+      color: rgba(29, 29, 27, 0.5);
+    }
+  }
+
+  &__img {
+    max-width: 52.7rem;
+    width: 29.5dvw;
+  }
+}
