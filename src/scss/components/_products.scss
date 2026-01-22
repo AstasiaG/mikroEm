@@ -1,10 +1,19 @@
 .products {
   &__title {
     margin-bottom: 4rem;
+
+    @media (max-width: 768px) {
+      margin-bottom: 2rem;
+    }
   }
 
   &__slider {
+    width: 85%;
     max-width: 146.4rem;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
 
     &-wrap {
       display: flex;
@@ -17,24 +26,53 @@
       max-width: 71.2rem;
       padding: 2rem 2rem 3.2rem;
       background-color: $grey;
+
+      @media (max-width: 768px) {
+        min-width: 32.6rem;
+      }
+
+      &.swiper-slide {
+        height: auto;
+        width: 100%;
+
+        @media (max-width: 768px) {
+          width: 90%;
+        }
+      }
     }
 
     &_img {
       width: 100%;
 
+      @media (max-width: 768px) {
+        height: 30.2rem;
+      }
+
       &-wrap {
         position: relative;
         margin-bottom: 3.2rem;
+
+        @media (max-width: 768px) {
+          margin-bottom: 1.2rem;
+        }
       }
     }
 
     &-btn-next, &-btn-prev {
       position: relative;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
 
     &-pagination {
       position: relative !important;
       margin-top: 3.6rem;
+
+      @media (max-width: 768px) {
+        margin-top: 2rem;
+      }
     }
 
     &_zoom {
@@ -51,6 +89,11 @@
       border-radius: 50%;
       background-color: rgba(0, 0, 0, 0.2);
       cursor: pointer;
+
+      @media (max-width: 768px) {
+        right: 1.6rem;
+        bottom: 1.6rem;
+      }
     }
   }
 }

@@ -15,10 +15,17 @@
   }
 
   &__item {
+    // max-width: 49.7rem;
+    // width: 42dvw;
     max-width: 49.7rem;
-    width: 42dvw;
+    width: 32.5%;
+    min-width: 34.3rem;
     background-color: $white;
     padding: 1.6rem 2rem 4rem 1.6rem;
+
+    &.swiper-slide {
+      height: auto;
+    }
 
     &_header {
       display: flex;

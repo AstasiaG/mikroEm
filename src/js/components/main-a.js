@@ -172,15 +172,20 @@ const slider1 = new Swiper('.products__slider', {
   },
   breakpoints: {
     769: {
-      slidesPerView: 'auto',
-      spaceBetween: rem(4),
+      slidesPerView: "auto",
+      spaceBetween: rem(1.2),
     },
-    210: {
-      slidesPerView: 'auto',
-      spaceBetween: rem(4),
-    }
   },
 });
+
+// if (window.innerWidth < 768) {
+//   const slider2 = new Swiper('.delivery__tabs', {
+//     slidesPerView: 'auto',
+//     spaceBetween: rem(1.2),
+//     watchOverflow: true,
+//     speed: 1000,
+//   });
+// }
 
 function init() {
   let map = new ymaps.Map("map", {
